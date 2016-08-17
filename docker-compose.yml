@@ -17,3 +17,7 @@ services:
         GITHUB_USER: ${GITHUB_USER}
     #command: make all
     env_file: .env
+
+  postgres:
+    image: postgres:9.5.4
+    env_file: .env
